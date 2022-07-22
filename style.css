@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    background: #f1f1f1;
+    display: grid;
+    margin: auto;
+}
+.header {
+    padding: 30px;
+    text-align: center;
+    background-color: #f1f1f1;
+    
+
+}
+.topnav {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #f1f1f1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+  
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change color on hover */
+.topnav a:hover {
+    background-color: #d1d1d1;
+    color: black;
+  }
+.footer {
+    padding: 30px;
+    text-align: center;
+    background: #f1f1f1;
+    margin-top: 20px;
+ }
