@@ -1,25 +1,28 @@
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@media screen and (max-device-width: 428px) and (orientation: portrait){
+    body {
+        background-image: url("tahed.jpg");
+        display:grid;
+        justify-content: center;
+        align-items: center;
+    }
 
-.main {
-    width: 480px;
-    height: 1020px;
-    border: 1px solid gray;
-    border-radius: 15px
-}
-
-header{
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: 40px;       
-}
-
-i {
-    font-size: 30px;
-}
+    
+    header{
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+        font-size: 80px;       
+        background-color: #F5CCF2;
+    }
+    .main{
+        overflow-y: hidden;
+        width: 80%;
+        margin: auto;
+        padding-top: 50px;
+        text-align:justify;
+        font-size: 60px; 
+    }
+    .main:hover{
+        overflow-y: scroll;
+    }
+  }
