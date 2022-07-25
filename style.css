@@ -1,5 +1,6 @@
 @media screen and (max-device-width: 428px) and (orientation: portrait){
     body {
+        background-color: #39364b;
         background-image: url("tahed2.jpg");
         background-size:contain;
         display:grid;
@@ -35,5 +36,43 @@
         padding: 40px;
         margin: 20px;
         background-blend-mode: luminosity;
+    }
+
+    .box {
+        animation: wobble 1s ease infinite;
+    }
+    
+    @keyframes wobble {
+        0%, 100% {
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+        }
+    
+        15% {
+            -webkit-transform: translateX(-24px) rotate(-2deg);
+            transform: translateX(-24px) rotate(-2deg);
+        }
+    
+        30% {
+            -webkit-transform: translateX(calc(24px / 2)) rotate(2deg);
+            transform: translateX(calc(24px / 2)) rotate(2deg);
+        }
+    
+        45% {
+            -webkit-transform: translateX(calc(-24px / 2)) rotate(calc(-2deg / 1.8));
+            transform: translateX(calc(-24px / 2)) rotate(calc(-2deg / 1.8));
+        }
+    
+        60% {
+            -webkit-transform: translateX(calc(24px / 3.3)) rotate(calc(2deg / 3));
+            transform: translateX(calc(24px / 3.3)) rotate(calc(2deg / 3));
+        }
+    
+        75% {
+            -webkit-transform: translateX(calc(-24px / 5.5)) rotate(calc(-2deg / 5));
+            transform: translateX(calc(-24px / 5.5)) rotate(calc(-2deg / 5));
+        }
     }
   }
