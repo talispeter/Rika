@@ -1,52 +1,24 @@
-* {
-    box-sizing: border-box;
-}
 body {
-    font-family: Arial;
-    background: #f1f1f1;
-    display: grid;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 480px;
+    height: 1020px;
+    border: 1px solid gray;
+}
+
+header{
+    width: 50%;
     margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;       
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-
-.header {
-    padding: 30px;
-    text-align: center;
-    background-color: #f1f1f1;
-    
-
+i {
+    font-size: 30px;
 }
-.topnav {
-    background-color: #1f1f1f;
-    border-bottom: 1px solid #f1f1f1;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-  
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f1f1f1;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-  /* Change color on hover */
-.topnav a:hover {
-    background-color: #d1d1d1;
-    color: black;
-  }
-.footer {
-    padding: 30px;
-    text-align: center;
-    background: #f1f1f1;
-    margin-top: 20px;
- }
