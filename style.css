@@ -7,6 +7,13 @@ body {
     display: grid;
     margin: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
 .header {
     padding: 30px;
     text-align: center;
